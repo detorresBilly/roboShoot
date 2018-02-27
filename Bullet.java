@@ -23,7 +23,7 @@ public class Bullet extends Actor
         GreenfootImage image = getImage();
         image.scale(10, 10);
         direction = dir;
-        speed = 15;
+        speed = 5;
 
     } 
     public void act() 
@@ -33,10 +33,10 @@ public class Bullet extends Actor
     }
 
     public boolean checkBounds(){
-        if(getX() >= 799){
+        if(getX() >= MyWorld.getWorldWidth() -1){
             return true;
         }
-        if(getY() >= 599){
+        if(getY() >= MyWorld.getWorldHeight() -1){
             return true;
         }
         if(getY() <= 1){

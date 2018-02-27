@@ -8,19 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Spawner extends Actor
 {
-    int yRand;
     public void EnemySpawn() {
-        if(getWorld().getObjects(Enemy.class).size() < 150){
-            yRand = (Greenfoot.getRandomNumber(200) - 100);
-            getWorld().addObject(new Enemy(), getX(), getY()+ yRand);
+        if(getWorld().getObjects(Enemy.class).size() < 3){
+            getWorld().addObject(new Enemy(), getX(), 50);
         }
     }
-    
-    public int getYSpawn(){
-        return getY() + yRand;
-    }
-    
-
     public void act() 
     {
        EnemySpawn();
