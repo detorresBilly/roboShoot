@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Robo
+comment0.text=\r\n\ Robo\r\n
+comment1.params=
+comment1.target=Robo()
+comment2.params=
+comment2.target=void\ smoothRotate()
+comment3.params=
+comment3.target=void\ shoot()
+comment4.params=
+comment4.target=void\ act()
+numComments=5
