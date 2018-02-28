@@ -18,7 +18,7 @@ public class Robo extends Actor
     private int splitShot = 2;
     private int money = 100;
     double rotateDecel = -0.2;
-    double rotateAccel = 0.1;
+    double rotateAccel = 0.3;
 
     double rotateSpeed = 0;
     int rotateTopSpeed = 5;

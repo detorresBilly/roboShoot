@@ -1,7 +1,13 @@
 #Greenfoot properties
+<<<<<<< HEAD
 #Wed Feb 28 14:59:26 EST 2018
 target2.width=80
 editor.fx.0.height=739
+=======
+#Wed Feb 28 14:54:48 EST 2018
+target2.width=80
+editor.fx.0.height=0
+>>>>>>> 82535718061fd4ea0afe5b37229b99e0e88cd21d
 target8.name=SplitBullet
 target11.y=0
 target11.x=0
@@ -91,8 +97,13 @@ dependency27.to=Spawner
 dependency21.from=Spawner
 target11.type=ClassTarget
 version=3.0.0
+<<<<<<< HEAD
 editor.fx.0.y=100
 editor.fx.0.x=552
+=======
+editor.fx.0.y=0
+editor.fx.0.x=0
+>>>>>>> 82535718061fd4ea0afe5b37229b99e0e88cd21d
 dependency15.from=Shop
 target15.height=50
 dependency6.to=Shop
@@ -127,7 +138,11 @@ dependency23.to=Robo
 target12.y=0
 target12.x=0
 dependency10.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.width=816
+=======
+editor.fx.0.width=0
+>>>>>>> 82535718061fd4ea0afe5b37229b99e0e88cd21d
 target11.showInterface=false
 target10.y=70
 dependency20.type=UsesDependency
