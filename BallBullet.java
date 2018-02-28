@@ -9,9 +9,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BallBullet extends EnemyBullet
 {
     public BallBullet(int dir) {
-    super(dir);
-} 
-public void act(){
-    super.act();
-}
+        super(dir);
+    } 
+    public void act(){
+        super.act();
+    }
 }

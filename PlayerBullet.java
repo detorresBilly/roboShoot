@@ -13,15 +13,14 @@ public class PlayerBullet extends Bullet
     }   
 
     public void act(){
- super.act();
+        super.act();
         if(destroyEnemies() || checkBounds()){
-        remove();
+            remove();
+        }
     }
-}
 
     public boolean destroyEnemies()
     {
-
         Actor tar = getOneIntersectingObject(Enemy.class);
         if(tar != null) 
         {

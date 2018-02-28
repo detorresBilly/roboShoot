@@ -17,5 +17,17 @@ public class SplitBullet extends PlayerBullet
         if(this == null){
             
         }
-    }    
+    }
+    public void remove(){
+        World myWorld = getWorld();
+        myWorld.addObject(new BasicBullet(getRotation()), getX(), getY());
+        myWorld.addObject(new BasicBullet(getRotation() + 50), getX(), getY());
+        myWorld.addObject(new BasicBullet(getRotation() + 100), getX(), getY());
+        myWorld.addObject(new BasicBullet(getRotation() + 150), getX(), getY());
+        myWorld.addObject(new BasicBullet(getRotation() + 200), getX(), getY());
+        myWorld.addObject(new BasicBullet(getRotation() + 250), getX(), getY());
+        myWorld.addObject(new BasicBullet(getRotation() + 300), getX(), getY());
+        myWorld.removeObject(this);  
+
+    }
 }

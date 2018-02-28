@@ -23,32 +23,9 @@ public class Enemy extends Actor
         }
     }
 
-    public void shoot() {
-
-        if((System.currentTimeMillis() - 200) > savedTime){
-            for(int i = 0; i < 3; i++){
-                getWorld().addObject(new BallBullet((Greenfoot.getRandomNumber(270) + 90)), getX(), getY());
-            }
-            savedTime = System.currentTimeMillis();
-        }
-    } 
-
+    
     public void act() 
     {
         destroyRobo();
-        movement();
     }
-    public void movement() {
-        if(getX() >= 799){
-            xAccel = -5;
-        }
-        if(getX() <= 1){
-            xAccel = 5;
-        } 
-    if (ySpeed < -50 || ySpeed > 50){
-        yAccel = yAccel * -1;
-    }
-    ySpeed += yAccel;
-    setLocation(getX()+xAccel, getY()+(int)ySpeed);
-}
 }

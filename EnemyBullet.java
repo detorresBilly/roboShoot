@@ -18,9 +18,9 @@ public class EnemyBullet extends Bullet
 
         super.act();
         if(destroyPlayer() || checkBounds()){
-        remove();
+            remove();
+        }
     }
-}
     public boolean destroyPlayer()
     {
         Actor tar = getOneIntersectingObject(Robo.class);
