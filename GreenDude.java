@@ -8,8 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class GreenDude extends Enemy
 {
     private double savedTime = 0;
-    int xAccel = 5;
-    double yAccel = 5;
+    int xAccel = Greenfoot.getRandomNumber(5) + 1;
+    double yAccel = 1;
     double ySpeed = 1;
     public void destroyRobo()
     {
@@ -21,36 +21,36 @@ public class GreenDude extends Enemy
             getWorld().removeObject(Robo);  
             getWorld().removeObject(this);                   
         }
-    }
-
+    }  
     public void shoot() {
 
         if((System.currentTimeMillis() - 200) > savedTime){
             for(int i = 0; i < 3; i++){
-                getWorld().addObject(new BallBullet((Greenfoot.getRandomNumber(270) + 90)), getX(), getY());
+                getWorld().addObject(new BallBullet((Greenfoot.getRandomNumber(270))), getX(), getY());
             }
             savedTime = System.currentTimeMillis();
         }
     } 
 
-    public void act() 
-    {
-       destroyRobo();
-       movement();
-    }
+    public void act() {
+        super.act();
+        turnTowards(400, 600);
+        movement();
+        if (Greenfoot.getRandomNumber(100) == 1){
+        shoot();
+       }
+   }
     public void movement() {
-        if(getWorld() != null){
-        if(getX() >= 799){
-            xAccel = -5;
+        if(getX() >= MyWorld.getWorldWidth() -1){
+            xAccel = -5 + Greenfoot.getRandomNumber(3);
         }
-        if(getX() <= 1){
-            xAccel = 5;
+        if(getX() <=0){
+            xAccel = 5 - Greenfoot.getRandomNumber(3);
         } 
-        if (ySpeed < -50 || ySpeed > 50){
+        if (ySpeed < -12 || ySpeed > 12){
         yAccel = yAccel * -1;
         }
         ySpeed += yAccel;
         setLocation(getX()+xAccel, getY()+(int)ySpeed);
-}
-}
+   }
 }
