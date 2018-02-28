@@ -11,12 +11,9 @@ public class Spawner extends Actor
     int yRand = 0;
     public void EnemySpawn() {
 
-        if(getWorld().getObjects(GreenDude.class).size() < 1){
+        if(getWorld().getObjects(GreenDude.class).size() < 150){
             yRand = (Greenfoot.getRandomNumber(200) - 100);
             getWorld().addObject(new GreenDude(), getX(), getY()+ yRand);
-            if(getWorld().getObjects(Enemy.class).size() < 5){
-            getWorld().addObject(new Enemy(), getX(), 50);
-            }
         }
     }
     public void act() {
