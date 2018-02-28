@@ -1,5 +1,5 @@
 import greenfoot.*;
-import java.awt.Color;
+
 public class Button extends Actor {
     GreenfootImage gfi = null;
     int minX , maxX , minY , maxY;
