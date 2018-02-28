@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Spawner extends Actor
 {
     public void EnemySpawn() {
-        if(getWorld().getObjects(Enemy.class).size() < 3){
+        if(getWorld().getObjects(Enemy.class).size() < 5){
             getWorld().addObject(new Enemy(), getX(), 50);
         }
     }

@@ -16,6 +16,7 @@ public class MyWorld extends World
         super(WORLD_WIDTH, WORLD_HEIGHT, CELL_SIZE);
         addObject(new Robo(), WORLD_WIDTH/2, WORLD_HEIGHT);
         addObject(new Spawner(), 50, 100);
+        addObject(new Spawner(), WORLD_WIDTH - 50, 100);
     }
 
     public static int getWorldHeight(){

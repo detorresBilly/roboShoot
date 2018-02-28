@@ -18,7 +18,7 @@ public class Robo extends Actor
     int rotateTopSpeed = 5;
     public Robo(){     
         GreenfootImage image = getImage();  
-        image.scale(150, 150);
+        image.scale(100, 100);
         setImage(image);
     }
 
