@@ -21,15 +21,7 @@ public class Enemy extends Actor
             getWorld().removeObject(Robo);  
             getWorld().removeObject(this);                   
         }
-    }
-
-<<<<<<< HEAD
-    
-    public void act() 
-    {
-        destroyRobo();
-    }
-=======
+    }  
     public void shoot() {
 
         if((System.currentTimeMillis() - 200) > savedTime){
@@ -40,8 +32,7 @@ public class Enemy extends Actor
         }
     } 
 
-    public void act() 
-    {
+    public void act() {
         turnTowards(400, 600);
         movement();
         if (Greenfoot.getRandomNumber(100) == 1){
@@ -61,5 +52,4 @@ public class Enemy extends Actor
     ySpeed += yAccel;
     setLocation(getX()+xAccel, getY()+(int)ySpeed);
 }
->>>>>>> 0bbf5b966dbcced711a3a78d9e208110a0b668a8
 }
