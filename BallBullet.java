@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * A ball bullet object, fired by enemies.
  * 
- * @author Philip DiSarro
- * @version 9/24/2019
+ * @author Billy DeTorres
+ * @version 9/15/2020
  */
 public class BallBullet extends EnemyBullet
 {
