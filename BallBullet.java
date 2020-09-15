@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class BallBullet here.
+ * A ball bullet object, fired by enemies.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Billy DeTorres
+ * @version 9/15/2020
  */
 public class BallBullet extends EnemyBullet
 {
